@@ -14,6 +14,9 @@
 		790934AD2BD8074900E50583 /* YumemiCodeCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934AC2BD8074900E50583 /* YumemiCodeCheckTests.swift */; };
 		790934B72BD8074900E50583 /* YumemiCodeCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934B62BD8074900E50583 /* YumemiCodeCheckUITests.swift */; };
 		790934B92BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934B82BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift */; };
+		790934CA2BD943D700E50583 /* PersonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934C92BD943D700E50583 /* PersonInputView.swift */; };
+		790934CD2BD9479E00E50583 /* PersonInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934CC2BD9479E00E50583 /* PersonInputViewModel.swift */; };
+		790934D02BDBA6C800E50583 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934CF2BDBA6C800E50583 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		790934B22BD8074900E50583 /* YumemiCodeCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YumemiCodeCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		790934B62BD8074900E50583 /* YumemiCodeCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiCodeCheckUITests.swift; sourceTree = "<group>"; };
 		790934B82BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiCodeCheckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		790934C92BD943D700E50583 /* PersonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputView.swift; sourceTree = "<group>"; };
+		790934CC2BD9479E00E50583 /* PersonInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputViewModel.swift; sourceTree = "<group>"; };
+		790934CF2BDBA6C800E50583 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				7909349B2BD8074800E50583 /* YumemiCodeCheckApp.swift */,
-				7909349D2BD8074800E50583 /* ContentView.swift */,
+				790934CE2BDB9FCE00E50583 /* Models */,
+				790934C82BD9394600E50583 /* Views */,
+				790934CB2BD9477300E50583 /* ViewModels */,
 				7909349F2BD8074900E50583 /* Assets.xcassets */,
 				790934A12BD8074900E50583 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				790934B82BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift */,
 			);
 			path = YumemiCodeCheckUITests;
+			sourceTree = "<group>";
+		};
+		790934C82BD9394600E50583 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7909349D2BD8074800E50583 /* ContentView.swift */,
+				790934C92BD943D700E50583 /* PersonInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		790934CB2BD9477300E50583 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				790934CC2BD9479E00E50583 /* PersonInputViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		790934CE2BDB9FCE00E50583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				790934CF2BDBA6C800E50583 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790934CA2BD943D700E50583 /* PersonInputView.swift in Sources */,
+				790934CD2BD9479E00E50583 /* PersonInputViewModel.swift in Sources */,
 				7909349E2BD8074800E50583 /* ContentView.swift in Sources */,
+				790934D02BDBA6C800E50583 /* Person.swift in Sources */,
 				7909349C2BD8074800E50583 /* YumemiCodeCheckApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
