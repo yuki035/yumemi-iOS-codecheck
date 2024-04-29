@@ -10,7 +10,7 @@ import SwiftUI
 struct PrefectureView: View {
 
     let prefecture: Prefecture
-    let imageWidth: CGFloat = 150
+    let imageHeihgt: CGFloat = 150
 
     var body: some View {
         VStack(spacing: 8) {
@@ -27,10 +27,11 @@ struct PrefectureView: View {
                     image
                         .resizable()
                         .scaledToFit()
-                        .frame(width: imageWidth)
+                        .frame(maxWidth: .infinity, maxHeight: imageHeihgt)
                 } placeholder: {
                     ProgressView()
                 }
+                .frame(height: imageHeihgt)
 
                 Grid(horizontalSpacing: 24) {
                     GridRow {
