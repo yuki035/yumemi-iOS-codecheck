@@ -13,28 +13,30 @@ struct FortuneResultScreen: View {
     let prefecture: Prefecture
 
     var body: some View {
-        VStack(spacing: 30) {
-            Button {
-                dismiss()
-            } label: {
-                Image(systemName: "xmark.circle.fill")
-                    .font(.largeTitle)
-                    .foregroundStyle(.gray)
-                    .symbolRenderingMode(.hierarchical)
+        ScrollView {
+            VStack(spacing: 30) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.largeTitle)
+                        .foregroundStyle(.gray)
+                        .symbolRenderingMode(.hierarchical)
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+
+                PrefectureView(prefecture: prefecture)
+
+                Spacer()
+
+                Button("戻る") {
+                    dismiss()
+                }
+                .buttonStyle(RoundedRectangleButtonStyle(backgroundColor: .secondary))
             }
-            .frame(maxWidth: .infinity, alignment: .trailing)
-
-            PrefectureView(prefecture: prefecture)
-
-            Spacer()
-
-            Button("戻る") {
-                dismiss()
-            }
-            .buttonStyle(RoundedRectangleButtonStyle(backgroundColor: .secondary))
+            .padding(.vertical, 16)
+            .padding(.horizontal, 30)
         }
-        .padding(.horizontal, 30)
-        .padding(.vertical, 16)
     }
 }
 

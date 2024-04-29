@@ -10,34 +10,49 @@ import SwiftUI
 struct PrefectureView: View {
 
     let prefecture: Prefecture
+    let imageWidth: CGFloat = 150
 
     var body: some View {
-        VStack(spacing: 4) {
-            AsyncImage(url: URL(string: prefecture.logoUrl)) { image in
-                image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150)
-            } placeholder: {
-                ProgressView()
+        VStack(spacing: 8) {
+            Text("相性のいい都道府県は...")
+                .font(.title2)
+                .fontWeight(.semibold)
+
+            VStack(spacing: 24) {
+                Text(prefecture.name)
+                    .font(.largeTitle)
+                    .bold()
+
+                AsyncImage(url: URL(string: prefecture.logoUrl)) { image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: imageWidth)
+                } placeholder: {
+                    ProgressView()
+                }
+
+                Grid(horizontalSpacing: 24) {
+                    GridRow {
+                        PrefectureDataCellView(title: "県庁所在地",
+                                               value: prefecture.capital)
+
+                        PrefectureDataCellView(title: "県民の日",
+                                               value: prefecture.citizenDay?.toString() ?? "ない")
+
+                        PrefectureDataCellView(title: "海岸線",
+                                               value: "\(prefecture.hasCoastLine ? "ある" : "ない")")
+                    }
+                }
+
+                Text(prefecture.brief)
+                    .font(.caption)
             }
-
-            Text(prefecture.name)
-
-            Text(prefecture.capital)
-
-            if let citizenDay = prefecture.citizenDay {
-                Text("県民の日: \(citizenDay.toString())")
-            }
-
-            Text("海岸線: \(prefecture.hasCoastLine ? "ある" : "ない")")
-
-            Text(prefecture.brief)
-                .font(.caption)
+            .padding(.vertical, 16)
+            .padding(.horizontal, 24)
+            .background(Color(UIColor.systemGray6))
+            .clipShape(RoundedRectangle(cornerRadius: 20))
         }
-        .padding(12)
-        .background(Color(UIColor.systemGray6))
-        .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
 
