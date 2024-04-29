@@ -25,6 +25,11 @@
 		790934DE2BDE8A9D00E50583 /* Blood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934DD2BDE8A9D00E50583 /* Blood.swift */; };
 		790934E12BDE8AF000E50583 /* MonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934E02BDE8AF000E50583 /* MonthDay.swift */; };
 		790934E32BDE8F9800E50583 /* PrefectureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934E22BDE8F9800E50583 /* PrefectureView.swift */; };
+		790934E82BDFE1DD00E50583 /* PersonInputScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934E72BDFE1DD00E50583 /* PersonInputScreen.swift */; };
+		790934EB2BDFE3EC00E50583 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934EA2BDFE3EC00E50583 /* IntroductionView.swift */; };
+		790934EE2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */; };
+		790934F02BDFEF8E00E50583 /* FortuneResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */; };
+		790934F32BE008FD00E50583 /* PrefectureDataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934F22BE008FD00E50583 /* PrefectureDataCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,11 @@
 		790934DD2BDE8A9D00E50583 /* Blood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blood.swift; sourceTree = "<group>"; };
 		790934E02BDE8AF000E50583 /* MonthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDay.swift; sourceTree = "<group>"; };
 		790934E22BDE8F9800E50583 /* PrefectureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureView.swift; sourceTree = "<group>"; };
+		790934E72BDFE1DD00E50583 /* PersonInputScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputScreen.swift; sourceTree = "<group>"; };
+		790934EA2BDFE3EC00E50583 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
+		790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneResultScreen.swift; sourceTree = "<group>"; };
+		790934F22BE008FD00E50583 /* PrefectureDataCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureDataCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +130,7 @@
 				790934CE2BDB9FCE00E50583 /* Models */,
 				790934C82BD9394600E50583 /* Views */,
 				790934CB2BD9477300E50583 /* ViewModels */,
+				790934EC2BDFE7F900E50583 /* Utils */,
 				7909349F2BD8074900E50583 /* Assets.xcassets */,
 				790934A12BD8074900E50583 /* Preview Content */,
 			);
@@ -155,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				7909349D2BD8074800E50583 /* ContentView.swift */,
-				790934C92BD943D700E50583 /* PersonInputView.swift */,
-				790934E22BDE8F9800E50583 /* PrefectureView.swift */,
+				790934E62BDFE19900E50583 /* PersonInput */,
+				790934F12BDFF1AF00E50583 /* FortuneResult */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +209,42 @@
 				790934E02BDE8AF000E50583 /* MonthDay.swift */,
 			);
 			path = Prefecture;
+			sourceTree = "<group>";
+		};
+		790934E62BDFE19900E50583 /* PersonInput */ = {
+			isa = PBXGroup;
+			children = (
+				790934E72BDFE1DD00E50583 /* PersonInputScreen.swift */,
+				790934E92BDFE34E00E50583 /* SubViews */,
+			);
+			path = PersonInput;
+			sourceTree = "<group>";
+		};
+		790934E92BDFE34E00E50583 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				790934EA2BDFE3EC00E50583 /* IntroductionView.swift */,
+				790934C92BD943D700E50583 /* PersonInputView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		790934EC2BDFE7F900E50583 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		790934F12BDFF1AF00E50583 /* FortuneResult */ = {
+			isa = PBXGroup;
+			children = (
+				790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */,
+				790934E22BDE8F9800E50583 /* PrefectureView.swift */,
+				790934F22BE008FD00E50583 /* PrefectureDataCellView.swift */,
+			);
+			path = FortuneResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,8 +390,13 @@
 				7909349E2BD8074800E50583 /* ContentView.swift in Sources */,
 				790934DE2BDE8A9D00E50583 /* Blood.swift in Sources */,
 				790934D42BDE75D800E50583 /* YumemiAPIRequest.swift in Sources */,
+				790934F02BDFEF8E00E50583 /* FortuneResultScreen.swift in Sources */,
 				790934D02BDBA6C800E50583 /* Person.swift in Sources */,
+				790934EB2BDFE3EC00E50583 /* IntroductionView.swift in Sources */,
 				790934E12BDE8AF000E50583 /* MonthDay.swift in Sources */,
+				790934F32BE008FD00E50583 /* PrefectureDataCellView.swift in Sources */,
+				790934E82BDFE1DD00E50583 /* PersonInputScreen.swift in Sources */,
+				790934EE2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift in Sources */,
 				7909349C2BD8074800E50583 /* YumemiCodeCheckApp.swift in Sources */,
 				790934D62BDE76AB00E50583 /* YumemiAPIClient.swift in Sources */,
 			);
