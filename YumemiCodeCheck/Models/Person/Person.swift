@@ -30,30 +30,18 @@ extension Person {
     }
 }
 
-struct YearMonthDay: Codable {
-    let year: Int
-    let month: Int
-    let day: Int
-}
+extension Person: YumemiAPIRequest {
+    typealias Response = Prefecture
 
-extension YearMonthDay {
-    init(from date: Date) {
-        let calendar = Calendar(identifier: .gregorian)
-        self.year = calendar.component(.year, from: date)
-        self.month = calendar.component(.month, from: date)
-        self.day = calendar.component(.day, from: date)
+    var path: String {
+        "/my_fortune"
     }
-}
 
-enum Blood: String, Codable, CaseIterable, Identifiable {
-    case typeA = "a"
-    case typeB = "b"
-    case typeAB = "ab"
-    case typeO = "o"
+    var method: HTTPMethod {
+        .post
+    }
 
-    var id: String { rawValue }
-
-    func toUpperCaseString() -> String {
-        return self.rawValue.uppercased()
+    func toData() throws -> Data {
+        return try JSONEncoder().encode(self)
     }
 }

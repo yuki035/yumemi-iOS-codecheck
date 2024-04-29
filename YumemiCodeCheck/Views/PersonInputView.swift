@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PersonInputView: View {
 
-    @StateObject var viewModel = PersonInputViewModel()
+    @ObservedObject var viewModel = ContentViewModel()
 
     var body: some View {
         VStack {
@@ -36,7 +36,6 @@ struct PersonInputView: View {
                 }
             }
         }
-        .padding(.horizontal, 24)
     }
 }
 
