@@ -16,11 +16,13 @@ struct PersonInputView: View {
             InputRowView(title: "名前") {
                 TextField("ここに入力", text: $viewModel.name)
                     .multilineTextAlignment(TextAlignment.trailing)
+                    .disabled(viewModel.isLoading)
                     .padding(.trailing, 8)
             }
 
             InputRowView(title: "誕生日") {
                 DatePicker("", selection: $viewModel.birthday, displayedComponents: .date)
+                    .disabled(viewModel.isLoading)
                     .environment(\.locale, Locale(identifier: "ja_JP"))
                     .labelsHidden()
             }
@@ -32,6 +34,7 @@ struct PersonInputView: View {
                             .tag(type)
                     }
                 }
+                .disabled(viewModel.isLoading)
             }
         }
     }

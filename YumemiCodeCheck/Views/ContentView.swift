@@ -13,6 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         PersonInputScreen(viewModel: viewModel)
+            .alert(isPresented: $viewModel.isAlert, error: viewModel.errorType, actions: {})
             .fullScreenCover(item: $viewModel.prefecture) { prefecture in
                 FortuneResultScreen(prefecture: prefecture)
             }
