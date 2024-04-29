@@ -13,10 +13,14 @@ final class ContentViewModel: ObservableObject {
     @Published var bloodType: Blood = .typeA
 
     @Published var prefecture: Prefecture?
+    @Published var isLoading: Bool = false
 
     let apiClient = YumemiAPIClient(urlSession: .shared, urlRequestBuilder: URLRequestBuilder())
 
     func onTapFortuneTelling() async {
+        DispatchQueue.main.async {
+            self.isLoading = true
+        }
         do {
             let request = Person(name: name, birthday: birthday, bloodType: bloodType)
             let response = try await apiClient.send(request)
@@ -26,6 +30,9 @@ final class ContentViewModel: ObservableObject {
         } catch {
             // エラー処理
             print("error")
+        }
+        DispatchQueue.main.async {
+            self.isLoading = false
         }
     }
 }

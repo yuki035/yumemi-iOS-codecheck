@@ -26,9 +26,16 @@ struct PersonInputScreen: View {
                     await viewModel.onTapFortuneTelling()
                 }
             } label: {
-                Text("占う")
+                if viewModel.isLoading {
+                    ProgressView()
+                } else {
+                    Text("占う")
+                }
             }
-            .buttonStyle(RoundedRectangleButtonStyle(backgroundColor: .purple))
+            .disabled(viewModel.isLoading)
+            .buttonStyle(RoundedRectangleButtonStyle(
+                backgroundColor: viewModel.isLoading ? .purple.opacity(0.3) : .purple)
+            )
         }
         .padding(.horizontal, 30)
         .padding(.bottom, 16)
