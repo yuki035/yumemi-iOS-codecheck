@@ -38,4 +38,18 @@ final class YumemiCodeCheckUITests: XCTestCase {
             }
         }
     }
+    
+    func testLabelValue() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        let text1 = app.staticTexts["text1"]
+        let text2 = app.staticTexts["text2"]
+
+        XCTAssertTrue(text1.exists)
+        XCTAssertTrue(text2.exists)
+
+        XCTAssertEqual(text1.label, "相性のいい都道府県を")
+        XCTAssertEqual(text2.label, "占ってあげる🔮")
+    }
 }
