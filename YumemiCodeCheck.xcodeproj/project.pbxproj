@@ -14,6 +14,17 @@
 		790934AD2BD8074900E50583 /* YumemiCodeCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934AC2BD8074900E50583 /* YumemiCodeCheckTests.swift */; };
 		790934B72BD8074900E50583 /* YumemiCodeCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934B62BD8074900E50583 /* YumemiCodeCheckUITests.swift */; };
 		790934B92BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934B82BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift */; };
+		790934CA2BD943D700E50583 /* PersonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934C92BD943D700E50583 /* PersonInputView.swift */; };
+		790934CD2BD9479E00E50583 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934CC2BD9479E00E50583 /* ContentViewModel.swift */; };
+		790934D02BDBA6C800E50583 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934CF2BDBA6C800E50583 /* Person.swift */; };
+		790934D22BDE702100E50583 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934D12BDE702100E50583 /* Prefecture.swift */; };
+		790934D42BDE75D800E50583 /* YumemiAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934D32BDE75D800E50583 /* YumemiAPIRequest.swift */; };
+		790934D62BDE76AB00E50583 /* YumemiAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934D52BDE76AB00E50583 /* YumemiAPIClient.swift */; };
+		790934D82BDE771600E50583 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934D72BDE771600E50583 /* URLRequestBuilder.swift */; };
+		790934DC2BDE8A8300E50583 /* YearMonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934DB2BDE8A8300E50583 /* YearMonthDay.swift */; };
+		790934DE2BDE8A9D00E50583 /* Blood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934DD2BDE8A9D00E50583 /* Blood.swift */; };
+		790934E12BDE8AF000E50583 /* MonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934E02BDE8AF000E50583 /* MonthDay.swift */; };
+		790934E32BDE8F9800E50583 /* PrefectureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934E22BDE8F9800E50583 /* PrefectureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		790934B22BD8074900E50583 /* YumemiCodeCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YumemiCodeCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		790934B62BD8074900E50583 /* YumemiCodeCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiCodeCheckUITests.swift; sourceTree = "<group>"; };
 		790934B82BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiCodeCheckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		790934C92BD943D700E50583 /* PersonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputView.swift; sourceTree = "<group>"; };
+		790934CC2BD9479E00E50583 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		790934CF2BDBA6C800E50583 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		790934D12BDE702100E50583 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		790934D32BDE75D800E50583 /* YumemiAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiAPIRequest.swift; sourceTree = "<group>"; };
+		790934D52BDE76AB00E50583 /* YumemiAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YumemiAPIClient.swift; sourceTree = "<group>"; };
+		790934D72BDE771600E50583 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		790934DB2BDE8A8300E50583 /* YearMonthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthDay.swift; sourceTree = "<group>"; };
+		790934DD2BDE8A9D00E50583 /* Blood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blood.swift; sourceTree = "<group>"; };
+		790934E02BDE8AF000E50583 /* MonthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDay.swift; sourceTree = "<group>"; };
+		790934E22BDE8F9800E50583 /* PrefectureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				7909349B2BD8074800E50583 /* YumemiCodeCheckApp.swift */,
-				7909349D2BD8074800E50583 /* ContentView.swift */,
+				790934CE2BDB9FCE00E50583 /* Models */,
+				790934C82BD9394600E50583 /* Views */,
+				790934CB2BD9477300E50583 /* ViewModels */,
 				7909349F2BD8074900E50583 /* Assets.xcassets */,
 				790934A12BD8074900E50583 /* Preview Content */,
 			);
@@ -125,6 +149,55 @@
 				790934B82BD8074900E50583 /* YumemiCodeCheckUITestsLaunchTests.swift */,
 			);
 			path = YumemiCodeCheckUITests;
+			sourceTree = "<group>";
+		};
+		790934C82BD9394600E50583 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7909349D2BD8074800E50583 /* ContentView.swift */,
+				790934C92BD943D700E50583 /* PersonInputView.swift */,
+				790934E22BDE8F9800E50583 /* PrefectureView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		790934CB2BD9477300E50583 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				790934CC2BD9479E00E50583 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		790934CE2BDB9FCE00E50583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				790934DA2BDE8A6F00E50583 /* Person */,
+				790934DF2BDE8ADF00E50583 /* Prefecture */,
+				790934D52BDE76AB00E50583 /* YumemiAPIClient.swift */,
+				790934D32BDE75D800E50583 /* YumemiAPIRequest.swift */,
+				790934D72BDE771600E50583 /* URLRequestBuilder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		790934DA2BDE8A6F00E50583 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				790934CF2BDBA6C800E50583 /* Person.swift */,
+				790934DB2BDE8A8300E50583 /* YearMonthDay.swift */,
+				790934DD2BDE8A9D00E50583 /* Blood.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		790934DF2BDE8ADF00E50583 /* Prefecture */ = {
+			isa = PBXGroup;
+			children = (
+				790934D12BDE702100E50583 /* Prefecture.swift */,
+				790934E02BDE8AF000E50583 /* MonthDay.swift */,
+			);
+			path = Prefecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +334,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790934DC2BDE8A8300E50583 /* YearMonthDay.swift in Sources */,
+				790934D22BDE702100E50583 /* Prefecture.swift in Sources */,
+				790934E32BDE8F9800E50583 /* PrefectureView.swift in Sources */,
+				790934CA2BD943D700E50583 /* PersonInputView.swift in Sources */,
+				790934D82BDE771600E50583 /* URLRequestBuilder.swift in Sources */,
+				790934CD2BD9479E00E50583 /* ContentViewModel.swift in Sources */,
 				7909349E2BD8074800E50583 /* ContentView.swift in Sources */,
+				790934DE2BDE8A9D00E50583 /* Blood.swift in Sources */,
+				790934D42BDE75D800E50583 /* YumemiAPIRequest.swift in Sources */,
+				790934D02BDBA6C800E50583 /* Person.swift in Sources */,
+				790934E12BDE8AF000E50583 /* MonthDay.swift in Sources */,
 				7909349C2BD8074800E50583 /* YumemiCodeCheckApp.swift in Sources */,
+				790934D62BDE76AB00E50583 /* YumemiAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
