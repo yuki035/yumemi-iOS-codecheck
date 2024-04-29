@@ -25,6 +25,11 @@ struct Prefecture: Decodable {
     }
 }
 
+// .sheet のために Identifiable に適合させる
+extension Prefecture: Identifiable {
+    var id: String { name }
+}
+
 extension Prefecture {
     // Preview用
     static var sampleData: Prefecture {

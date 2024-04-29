@@ -28,14 +28,11 @@ struct ContentView: View {
                     .background(.blue)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
-
-            if let prefecture = viewModel.prefecture {
-                PrefectureView(prefecture: prefecture)
-            } else {
-                Text("nil")
-            }
         }
         .padding(.horizontal, 24)
+        .sheet(item: $viewModel.prefecture) { prefecture in
+            PrefectureView(prefecture: prefecture)
+        }
     }
 }
 
