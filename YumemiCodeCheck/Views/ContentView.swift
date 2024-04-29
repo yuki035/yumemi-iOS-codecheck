@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         PersonInputScreen(viewModel: viewModel)
             .sheet(item: $viewModel.prefecture) { prefecture in
-                PrefectureView(prefecture: prefecture)
+                FortuneResultScreen(prefecture: prefecture)
             }
     }
 }

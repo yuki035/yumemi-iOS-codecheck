@@ -28,6 +28,7 @@
 		790934E82BDFE1DD00E50583 /* PersonInputScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934E72BDFE1DD00E50583 /* PersonInputScreen.swift */; };
 		790934EB2BDFE3EC00E50583 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934EA2BDFE3EC00E50583 /* IntroductionView.swift */; };
 		790934EE2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */; };
+		790934F02BDFEF8E00E50583 /* FortuneResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		790934E72BDFE1DD00E50583 /* PersonInputScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputScreen.swift; sourceTree = "<group>"; };
 		790934EA2BDFE3EC00E50583 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
+		790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneResultScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,7 @@
 			children = (
 				7909349D2BD8074800E50583 /* ContentView.swift */,
 				790934E62BDFE19900E50583 /* PersonInput */,
-				790934E22BDE8F9800E50583 /* PrefectureView.swift */,
+				790934F12BDFF1AF00E50583 /* FortuneResult */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +233,15 @@
 				790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		790934F12BDFF1AF00E50583 /* FortuneResult */ = {
+			isa = PBXGroup;
+			children = (
+				790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */,
+				790934E22BDE8F9800E50583 /* PrefectureView.swift */,
+			);
+			path = FortuneResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +387,7 @@
 				7909349E2BD8074800E50583 /* ContentView.swift in Sources */,
 				790934DE2BDE8A9D00E50583 /* Blood.swift in Sources */,
 				790934D42BDE75D800E50583 /* YumemiAPIRequest.swift in Sources */,
+				790934F02BDFEF8E00E50583 /* FortuneResultScreen.swift in Sources */,
 				790934D02BDBA6C800E50583 /* Person.swift in Sources */,
 				790934EB2BDFE3EC00E50583 /* IntroductionView.swift in Sources */,
 				790934E12BDE8AF000E50583 /* MonthDay.swift in Sources */,
