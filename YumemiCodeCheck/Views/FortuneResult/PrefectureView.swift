@@ -38,10 +38,10 @@ struct PrefectureView: View {
                                                value: prefecture.capital)
 
                         PrefectureDataCellView(title: "県民の日",
-                                               value: prefecture.citizenDay?.toString() ?? "ない")
+                                               value: prefecture.citizenDay?.toString() ?? "なし")
 
                         PrefectureDataCellView(title: "海岸線",
-                                               value: "\(prefecture.hasCoastLine ? "ある" : "ない")")
+                                               value: "\(prefecture.hasCoastLine ? "あり" : "なし")")
                     }
                 }
 
