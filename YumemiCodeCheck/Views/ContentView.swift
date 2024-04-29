@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         PersonInputScreen(viewModel: viewModel)
-            .sheet(item: $viewModel.prefecture) { prefecture in
+            .fullScreenCover(item: $viewModel.prefecture) { prefecture in
                 FortuneResultScreen(prefecture: prefecture)
             }
     }
