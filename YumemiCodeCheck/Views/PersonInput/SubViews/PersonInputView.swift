@@ -16,7 +16,7 @@ struct PersonInputView: View {
             InputRowView(title: "名前") {
                 TextField("ここに入力", text: $viewModel.name)
                     .multilineTextAlignment(TextAlignment.trailing)
-                    .padding(.trailing, 4)
+                    .padding(.trailing, 8)
             }
 
             InputRowView(title: "誕生日") {
