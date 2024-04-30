@@ -19,9 +19,11 @@ struct IntroductionView: View {
                 Text("相性のいい都道府県を")
                     .font(.title)
                     .bold()
+                    .accessibility(identifier: "text1")
                 Text("占ってあげる🔮")
                     .font(.title)
                     .bold()
+                    .accessibility(identifier: "text2")
             }
         }
     }
