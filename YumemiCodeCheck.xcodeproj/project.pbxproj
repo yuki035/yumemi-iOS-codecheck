@@ -30,6 +30,8 @@
 		790934EE2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */; };
 		790934F02BDFEF8E00E50583 /* FortuneResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */; };
 		790934F32BE008FD00E50583 /* PrefectureDataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790934F22BE008FD00E50583 /* PrefectureDataCellView.swift */; };
+		790934F62BE06F0600E50583 /* PersonInputScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 790934F52BE06F0600E50583 /* PersonInputScreen.png */; };
+		790934F82BE06F1500E50583 /* FortuneResultScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 790934F72BE06F1500E50583 /* FortuneResultScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		790934ED2BDFE86F00E50583 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
 		790934EF2BDFEF8E00E50583 /* FortuneResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneResultScreen.swift; sourceTree = "<group>"; };
 		790934F22BE008FD00E50583 /* PrefectureDataCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureDataCellView.swift; sourceTree = "<group>"; };
+		790934F52BE06F0600E50583 /* PersonInputScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PersonInputScreen.png; sourceTree = "<group>"; };
+		790934F72BE06F1500E50583 /* FortuneResultScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FortuneResultScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				790934CB2BD9477300E50583 /* ViewModels */,
 				790934EC2BDFE7F900E50583 /* Utils */,
 				7909349F2BD8074900E50583 /* Assets.xcassets */,
+				790934F42BE06EF300E50583 /* Screenshots */,
 				790934A12BD8074900E50583 /* Preview Content */,
 			);
 			path = YumemiCodeCheck;
@@ -247,6 +252,15 @@
 			path = FortuneResult;
 			sourceTree = "<group>";
 		};
+		790934F42BE06EF300E50583 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				790934F52BE06F0600E50583 /* PersonInputScreen.png */,
+				790934F72BE06F1500E50583 /* FortuneResultScreen.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,6 +369,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790934F82BE06F1500E50583 /* FortuneResultScreen.png in Resources */,
+				790934F62BE06F0600E50583 /* PersonInputScreen.png in Resources */,
 				790934A32BD8074900E50583 /* Preview Assets.xcassets in Resources */,
 				790934A02BD8074900E50583 /* Assets.xcassets in Resources */,
 			);
